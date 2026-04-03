@@ -1,0 +1,107 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy",
+  "design_philosophy": "A 'Boutique Medical' aesthetic blending the high-trust, calming nature of earth tones with cutting-edge tech via smooth Framer Motion animations and crisp 'Crystal Glass' overlays. Avoid sterile clinical blues; use warm bone-white, deep forest greens, and sage to evoke wellness and authority.",
+  "colors": {
+    "background": "#F9F8F6",
+    "foreground": "#1C2B23",
+    "primary": "#4A5D23",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#E8E5E1",
+    "secondary_foreground": "#1C2B23",
+    "accent": "#E07A5F",
+    "accent_foreground": "#FFFFFF",
+    "muted": "#F0EFEA",
+    "muted_foreground": "#6D7A68",
+    "border": "#EAE6DF",
+    "surface": "#FFFFFF",
+    "severity": {
+      "low": "#8AA179",
+      "medium": "#DDA15E",
+      "high": "#E07A5F"
+    }
+  },
+  "typography": {
+    "google_fonts_import": "@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');",
+    "font_family": {
+      "heading": "Outfit, sans-serif",
+      "body": "DM Sans, sans-serif",
+      "display": "Cormorant Garamond, serif"
+    },
+    "rules": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-display font-semibold tracking-tight text-foreground",
+      "h2": "text-3xl sm:text-4xl font-heading font-medium tracking-tight text-foreground",
+      "h3": "text-xl sm:text-2xl font-heading font-medium text-foreground",
+      "body": "text-base font-body text-muted-foreground leading-relaxed",
+      "large_numbers": "text-6xl md:text-8xl font-display font-semibold tracking-tighter text-primary"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing (p-8 to p-12 in cards) to evoke high-end editorial design. Tension via asymmetry.",
+    "dashboard_grid": "The 'Control Room' Layout. Use CSS Grid: grid-cols-1 lg:grid-cols-12 gap-6 p-6 md:p-10. Max width 1440px mx-auto.",
+    "dashboard_spans": {
+      "sidebar": "lg:col-span-2",
+      "main_content": "lg:col-span-7 space-y-8",
+      "ai_chat": "lg:col-span-3 h-[calc(100vh-80px)] sticky top-6"
+    }
+  },
+  "surface_strategies": {
+    "main_background": "bg-background text-foreground",
+    "cards": "bg-surface rounded-3xl border border-border shadow-[0_8px_30px_-10px_rgba(28,43,35,0.05)] overflow-hidden",
+    "glass_panel": "bg-white/70 backdrop-blur-xl border border-white/60 shadow-lg rounded-3xl",
+    "inputs": "bg-background border-border text-foreground focus:ring-2 focus:ring-primary/20 focus:border-primary rounded-xl transition-all"
+  },
+  "components_instructions": {
+    "buttons": "rounded-full px-8 py-3 font-heading font-medium transition-transform hover:-translate-y-0.5 active:translate-y-0",
+    "symptom_tags": "rounded-full px-5 py-2 bg-secondary text-secondary-foreground border border-transparent hover:border-primary/30 transition-colors cursor-pointer text-sm font-medium inline-flex items-center gap-2",
+    "confidence_bar": "h-2.5 w-full bg-muted rounded-full overflow-hidden. Animate the inner bar width using Framer Motion. Color code based on severity.",
+    "chat_bubble_user": "p-4 rounded-2xl max-w-[85%] text-sm bg-primary text-primary-foreground rounded-br-sm ml-auto",
+    "chat_bubble_ai": "p-4 rounded-2xl max-w-[85%] text-sm bg-surface border border-border text-foreground rounded-bl-sm mr-auto shadow-sm",
+    "icons": "Use @phosphor-icons/react (Duotone or Regular weight). Do not use generic icons."
+  },
+  "media_urls": [
+    {
+      "category": "hero_background",
+      "url": "https://static.prod-images.emergentagent.com/jobs/432ecbdd-b42e-4795-976b-f89f7cb48e73/images/0022d50d17c29071f0f3fa0d17d584a07a8acfab81aabbcdefd529f227dc420f.png",
+      "description": "Abstract 3D organic cellular shapes floating in warm soft lighting. Use with a gradient overlay (bg-background/80 to transparent) so text remains fully legible."
+    },
+    {
+      "category": "auth_side_image",
+      "url": "https://static.prod-images.emergentagent.com/jobs/432ecbdd-b42e-4795-976b-f89f7cb48e73/images/446da895a0ded72cffc264acdc94ad48240c412878d3955f3da95e5efeaa5564.png",
+      "description": "Macro photography of clear crystalline medical glass and soft warm sand textures. Use as the left-side cover image on the login/register screen."
+    },
+    {
+      "category": "doctor_portrait_1",
+      "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzUxNTA1Nzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dr. Sarah Jenkins - General Practice"
+    },
+    {
+      "category": "doctor_portrait_2",
+      "url": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzUxNTA1Nzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dr. Michael Chen - Neurologist"
+    },
+    {
+      "category": "doctor_portrait_3",
+      "url": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzUxNTA1Nzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dr. Emily Rostova - Cardiologist"
+    }
+  ],
+  "motion_and_interactions": {
+    "page_load": "Use Framer Motion to stagger the entrance of the dashboard components (y: 20, opacity: 0 to 1, duration 0.5s, staggerChildren 0.1s).",
+    "predictions_reveal": "When a disease prediction is generated, animate the large percentage number counting up (if possible) or smoothly scaling in.",
+    "ai_typing_indicator": "Use a subtle 3-dot pulse animation inside the chat window when waiting for Claude to respond.",
+    "hover_states": "Cards should subtly lift (-translate-y-1) and increase shadow on hover.",
+    "accessibility_testing": "CRITICAL: All interactive elements MUST include a data-testid attribute (e.g., data-testid='symptom-input', data-testid='login-submit-button')."
+  },
+  "specific_page_instructions": {
+    "landing_page": "High visual impact hero section. Massive H1 typography. Use the hero_background image covering the full screen behind a bg-background/90 overlay. Clear CTA to 'Start Symptom Assessment'.",
+    "dashboard": "The core app. A clean top navigation bar with user profile. Left sidebar for Navigation/History. Center column for 'Symptom Input' (a large, inviting search bar that adds tags) and the 'Prediction Results' cards. Right column for the 'Claude AI Assistant' sticky chat interface.",
+    "prediction_card": "When results are returned, display them prominently. The top prediction should dominate the space with 'text-8xl font-display'. Show the Severity Indicator (Low/Medium/High) using the corresponding severity color. Below predictions, show a horizontal scrollable row of 'Mock Nearby Doctors' using the provided images.",
+    "auth_page": "Split screen layout (lg:grid-cols-2). Left side is the auth_side_image (object-cover). Right side is the centered Login/Register form, heavily padded (p-12), using clean 'Soft Utility' Shadcn customized inputs."
+  },
+  "tech_stack_addons": {
+    "icons": "yarn add @phosphor-icons/react",
+    "motion": "yarn add framer-motion",
+    "routing": "yarn add react-router-dom"
+  }
+}
